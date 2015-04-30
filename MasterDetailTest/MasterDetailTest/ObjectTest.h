@@ -11,5 +11,8 @@
 @interface ObjectTest : NSObject
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *property1;
+@property (nonatomic, strong) NSString *property2;
+@property (nonatomic, strong) NSString *property3;
 
 @end

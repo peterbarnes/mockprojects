@@ -10,18 +10,19 @@
 
 @implementation ViewController
 
--(id)init
-{
-    self = [super init];
-    if (self) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    return self;
-}
+//-(id)init
+//{
+//    self = [super init];
+//    if (self) {
+//        NSLog(@"er");
+//        self.objects = [[NSMutableArray alloc] init];
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.objects = [[NSMutableArray alloc] init];
     // Do any additional setup after loading the view.
 }
 

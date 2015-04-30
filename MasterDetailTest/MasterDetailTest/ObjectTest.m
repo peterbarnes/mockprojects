@@ -15,6 +15,9 @@
     self = [super init];
     if (self) {
         self.name = @"New Object";
+        self.property1 = @"Property 1";
+        self.property2 = @"Property 2";
+        self.property3 = @"Property 3";
     }
     return self;
 }
