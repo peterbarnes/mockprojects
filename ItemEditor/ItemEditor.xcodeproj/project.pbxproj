@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F27AC6A1AF41AA100EFF6D2 /* CFKAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC691AF41AA100EFF6D2 /* CFKAccount.m */; };
+		9F27AC6D1AF41AAC00EFF6D2 /* CFKCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC6C1AF41AAC00EFF6D2 /* CFKCatalog.m */; };
+		9F27AC701AF41ABD00EFF6D2 /* CFKDiscount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC6F1AF41ABD00EFF6D2 /* CFKDiscount.m */; };
+		9F27AC731AF41ACB00EFF6D2 /* CFKTax.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC721AF41ACB00EFF6D2 /* CFKTax.m */; };
+		9F27AC761AF41ADA00EFF6D2 /* CFKOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC751AF41ADA00EFF6D2 /* CFKOption.m */; };
+		9F27AC791AF41AF500EFF6D2 /* CFKConfigurable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC781AF41AF500EFF6D2 /* CFKConfigurable.m */; };
+		9F27AC7C1AF41B7A00EFF6D2 /* CFKBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC7B1AF41B7A00EFF6D2 /* CFKBase.m */; };
+		9F27AC7F1AF41BB000EFF6D2 /* CFKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC7E1AF41BB000EFF6D2 /* CFKImage.m */; };
+		9F27AC821AF41BC500EFF6D2 /* CFKLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC811AF41BC500EFF6D2 /* CFKLocation.m */; };
+		9F27AC851AF41BDC00EFF6D2 /* CFKOptionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC841AF41BDC00EFF6D2 /* CFKOptionGroup.m */; };
+		9F27AC881AF41BF500EFF6D2 /* CFKPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC871AF41BF500EFF6D2 /* CFKPrinter.m */; };
+		9F27AC8B1AF41C2400EFF6D2 /* CFKScannable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC8A1AF41C2400EFF6D2 /* CFKScannable.m */; };
+		9F27AC8E1AF41C5100EFF6D2 /* CFKPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC8D1AF41C5100EFF6D2 /* CFKPrice.m */; };
+		9F27AC911AF41C5900EFF6D2 /* CFKUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC901AF41C5900EFF6D2 /* CFKUnit.m */; };
+		9F27AC941AF41C6900EFF6D2 /* CFKStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC931AF41C6900EFF6D2 /* CFKStore.m */; };
+		9F27AC971AF41E4500EFF6D2 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC961AF41E4500EFF6D2 /* AccountViewController.m */; };
+		9F27AC9C1AF41F6700EFF6D2 /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC9B1AF41F6700EFF6D2 /* CatalogViewController.m */; };
+		9F27AC9F1AF41F7900EFF6D2 /* OptionGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC9E1AF41F7900EFF6D2 /* OptionGroupViewController.m */; };
+		9F27ACA31AF41F8A00EFF6D2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACA11AF41F8A00EFF6D2 /* LocationViewController.m */; };
+		9F27ACA71AF41FAD00EFF6D2 /* PriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACA61AF41FAD00EFF6D2 /* PriceViewController.m */; };
+		9F27ACAA1AF41FC500EFF6D2 /* UnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACA91AF41FC500EFF6D2 /* UnitViewController.m */; };
+		9F27ACAD1AF41FD500EFF6D2 /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACAC1AF41FD500EFF6D2 /* StoreViewController.m */; };
+		9F27ACB01AF41FE800EFF6D2 /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACAF1AF41FE800EFF6D2 /* OptionViewController.m */; };
+		9F27ACB31AF41FF800EFF6D2 /* TaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACB21AF41FF800EFF6D2 /* TaxViewController.m */; };
+		9F27ACB71AF4200B00EFF6D2 /* PrinterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACB51AF4200B00EFF6D2 /* PrinterViewController.m */; };
+		9F27ACBB1AF4201900EFF6D2 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACBA1AF4201900EFF6D2 /* ItemViewController.m */; };
+		9F27ACBE1AF4205600EFF6D2 /* DiscountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACBD1AF4205600EFF6D2 /* DiscountViewController.m */; };
+		9F27ACC11AF4208100EFF6D2 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACC01AF4208100EFF6D2 /* WindowController.m */; };
+		9F27ACC41AF4209300EFF6D2 /* TabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACC31AF4209300EFF6D2 /* TabController.m */; };
+		9F27ACC71AF420AA00EFF6D2 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACC61AF420AA00EFF6D2 /* DataSource.m */; };
+		9F580A361AF2EBD50024F717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A351AF2EBD50024F717 /* AppDelegate.m */; };
+		9F580A381AF2EBD50024F717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A371AF2EBD50024F717 /* main.m */; };
+		9F580A3B1AF2EBD50024F717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A3A1AF2EBD50024F717 /* ViewController.m */; };
+		9F580A3D1AF2EBD50024F717 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F580A3C1AF2EBD50024F717 /* Images.xcassets */; };
+		9F580A401AF2EBD50024F717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F580A3E1AF2EBD50024F717 /* Main.storyboard */; };
+		9F580A4C1AF2EBD60024F717 /* ItemEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A4B1AF2EBD60024F717 /* ItemEditorTests.m */; };
+		9F580A5A1AF2EF2F0024F717 /* CFKItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A591AF2EF2F0024F717 /* CFKItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F580A461AF2EBD60024F717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F580A271AF2EBD50024F717 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F580A2E1AF2EBD50024F717;
+			remoteInfo = ItemEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F27AC681AF41AA100EFF6D2 /* CFKAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKAccount.h; sourceTree = "<group>"; };
+		9F27AC691AF41AA100EFF6D2 /* CFKAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKAccount.m; sourceTree = "<group>"; };
+		9F27AC6B1AF41AAC00EFF6D2 /* CFKCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKCatalog.h; sourceTree = "<group>"; };
+		9F27AC6C1AF41AAC00EFF6D2 /* CFKCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKCatalog.m; sourceTree = "<group>"; };
+		9F27AC6E1AF41ABD00EFF6D2 /* CFKDiscount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKDiscount.h; sourceTree = "<group>"; };
+		9F27AC6F1AF41ABD00EFF6D2 /* CFKDiscount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKDiscount.m; sourceTree = "<group>"; };
+		9F27AC711AF41ACB00EFF6D2 /* CFKTax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKTax.h; sourceTree = "<group>"; };
+		9F27AC721AF41ACB00EFF6D2 /* CFKTax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKTax.m; sourceTree = "<group>"; };
+		9F27AC741AF41ADA00EFF6D2 /* CFKOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKOption.h; sourceTree = "<group>"; };
+		9F27AC751AF41ADA00EFF6D2 /* CFKOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKOption.m; sourceTree = "<group>"; };
+		9F27AC771AF41AF500EFF6D2 /* CFKConfigurable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKConfigurable.h; sourceTree = "<group>"; };
+		9F27AC781AF41AF500EFF6D2 /* CFKConfigurable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKConfigurable.m; sourceTree = "<group>"; };
+		9F27AC7A1AF41B7A00EFF6D2 /* CFKBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKBase.h; sourceTree = "<group>"; };
+		9F27AC7B1AF41B7A00EFF6D2 /* CFKBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKBase.m; sourceTree = "<group>"; };
+		9F27AC7D1AF41BB000EFF6D2 /* CFKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKImage.h; sourceTree = "<group>"; };
+		9F27AC7E1AF41BB000EFF6D2 /* CFKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKImage.m; sourceTree = "<group>"; };
+		9F27AC801AF41BC500EFF6D2 /* CFKLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKLocation.h; sourceTree = "<group>"; };
+		9F27AC811AF41BC500EFF6D2 /* CFKLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKLocation.m; sourceTree = "<group>"; };
+		9F27AC831AF41BDC00EFF6D2 /* CFKOptionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKOptionGroup.h; sourceTree = "<group>"; };
+		9F27AC841AF41BDC00EFF6D2 /* CFKOptionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKOptionGroup.m; sourceTree = "<group>"; };
+		9F27AC861AF41BF500EFF6D2 /* CFKPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKPrinter.h; sourceTree = "<group>"; };
+		9F27AC871AF41BF500EFF6D2 /* CFKPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKPrinter.m; sourceTree = "<group>"; };
+		9F27AC891AF41C2400EFF6D2 /* CFKScannable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKScannable.h; sourceTree = "<group>"; };
+		9F27AC8A1AF41C2400EFF6D2 /* CFKScannable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKScannable.m; sourceTree = "<group>"; };
+		9F27AC8C1AF41C5100EFF6D2 /* CFKPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKPrice.h; sourceTree = "<group>"; };
+		9F27AC8D1AF41C5100EFF6D2 /* CFKPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKPrice.m; sourceTree = "<group>"; };
+		9F27AC8F1AF41C5900EFF6D2 /* CFKUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKUnit.h; sourceTree = "<group>"; };
+		9F27AC901AF41C5900EFF6D2 /* CFKUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKUnit.m; sourceTree = "<group>"; };
+		9F27AC921AF41C6900EFF6D2 /* CFKStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKStore.h; sourceTree = "<group>"; };
+		9F27AC931AF41C6900EFF6D2 /* CFKStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKStore.m; sourceTree = "<group>"; };
+		9F27AC951AF41E4500EFF6D2 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		9F27AC961AF41E4500EFF6D2 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		9F27AC9A1AF41F6700EFF6D2 /* CatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogViewController.h; sourceTree = "<group>"; };
+		9F27AC9B1AF41F6700EFF6D2 /* CatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogViewController.m; sourceTree = "<group>"; };
+		9F27AC9D1AF41F7900EFF6D2 /* OptionGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionGroupViewController.h; sourceTree = "<group>"; };
+		9F27AC9E1AF41F7900EFF6D2 /* OptionGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionGroupViewController.m; sourceTree = "<group>"; };
+		9F27ACA01AF41F8A00EFF6D2 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		9F27ACA11AF41F8A00EFF6D2 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		9F27ACA51AF41FAD00EFF6D2 /* PriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceViewController.h; sourceTree = "<group>"; };
+		9F27ACA61AF41FAD00EFF6D2 /* PriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceViewController.m; sourceTree = "<group>"; };
+		9F27ACA81AF41FC500EFF6D2 /* UnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitViewController.h; sourceTree = "<group>"; };
+		9F27ACA91AF41FC500EFF6D2 /* UnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitViewController.m; sourceTree = "<group>"; };
+		9F27ACAB1AF41FD500EFF6D2 /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		9F27ACAC1AF41FD500EFF6D2 /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		9F27ACAE1AF41FE800EFF6D2 /* OptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionViewController.h; sourceTree = "<group>"; };
+		9F27ACAF1AF41FE800EFF6D2 /* OptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionViewController.m; sourceTree = "<group>"; };
+		9F27ACB11AF41FF800EFF6D2 /* TaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxViewController.h; sourceTree = "<group>"; };
+		9F27ACB21AF41FF800EFF6D2 /* TaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxViewController.m; sourceTree = "<group>"; };
+		9F27ACB41AF4200B00EFF6D2 /* PrinterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterViewController.h; sourceTree = "<group>"; };
+		9F27ACB51AF4200B00EFF6D2 /* PrinterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterViewController.m; sourceTree = "<group>"; };
+		9F27ACB91AF4201900EFF6D2 /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		9F27ACBA1AF4201900EFF6D2 /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+		9F27ACBC1AF4205600EFF6D2 /* DiscountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountViewController.h; sourceTree = "<group>"; };
+		9F27ACBD1AF4205600EFF6D2 /* DiscountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountViewController.m; sourceTree = "<group>"; };
+		9F27ACBF1AF4208100EFF6D2 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		9F27ACC01AF4208100EFF6D2 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		9F27ACC21AF4209300EFF6D2 /* TabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabController.h; sourceTree = "<group>"; };
+		9F27ACC31AF4209300EFF6D2 /* TabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabController.m; sourceTree = "<group>"; };
+		9F27ACC51AF420AA00EFF6D2 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		9F27ACC61AF420AA00EFF6D2 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		9F580A2F1AF2EBD50024F717 /* ItemEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItemEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F580A331AF2EBD50024F717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F580A341AF2EBD50024F717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F580A351AF2EBD50024F717 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F580A371AF2EBD50024F717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F580A391AF2EBD50024F717 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9F580A3A1AF2EBD50024F717 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F580A3C1AF2EBD50024F717 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9F580A3F1AF2EBD50024F717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F580A451AF2EBD60024F717 /* ItemEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItemEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F580A4A1AF2EBD60024F717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F580A4B1AF2EBD60024F717 /* ItemEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemEditorTests.m; sourceTree = "<group>"; };
+		9F580A581AF2EF2F0024F717 /* CFKItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKItem.h; sourceTree = "<group>"; };
+		9F580A591AF2EF2F0024F717 /* CFKItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F580A2C1AF2EBD50024F717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F580A421AF2EBD60024F717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F27AC981AF41E5900EFF6D2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F27AC951AF41E4500EFF6D2 /* AccountViewController.h */,
+				9F27AC961AF41E4500EFF6D2 /* AccountViewController.m */,
+				9F27AC9A1AF41F6700EFF6D2 /* CatalogViewController.h */,
+				9F27AC9B1AF41F6700EFF6D2 /* CatalogViewController.m */,
+				9F27AC9D1AF41F7900EFF6D2 /* OptionGroupViewController.h */,
+				9F27AC9E1AF41F7900EFF6D2 /* OptionGroupViewController.m */,
+				9F27ACA01AF41F8A00EFF6D2 /* LocationViewController.h */,
+				9F27ACA11AF41F8A00EFF6D2 /* LocationViewController.m */,
+				9F27ACA51AF41FAD00EFF6D2 /* PriceViewController.h */,
+				9F27ACA61AF41FAD00EFF6D2 /* PriceViewController.m */,
+				9F27ACA81AF41FC500EFF6D2 /* UnitViewController.h */,
+				9F27ACA91AF41FC500EFF6D2 /* UnitViewController.m */,
+				9F27ACAB1AF41FD500EFF6D2 /* StoreViewController.h */,
+				9F27ACAC1AF41FD500EFF6D2 /* StoreViewController.m */,
+				9F27ACAE1AF41FE800EFF6D2 /* OptionViewController.h */,
+				9F27ACAF1AF41FE800EFF6D2 /* OptionViewController.m */,
+				9F27ACB11AF41FF800EFF6D2 /* TaxViewController.h */,
+				9F27ACB21AF41FF800EFF6D2 /* TaxViewController.m */,
+				9F27ACB41AF4200B00EFF6D2 /* PrinterViewController.h */,
+				9F27ACB51AF4200B00EFF6D2 /* PrinterViewController.m */,
+				9F27ACB91AF4201900EFF6D2 /* ItemViewController.h */,
+				9F27ACBA1AF4201900EFF6D2 /* ItemViewController.m */,
+				9F27ACBC1AF4205600EFF6D2 /* DiscountViewController.h */,
+				9F27ACBD1AF4205600EFF6D2 /* DiscountViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9F27AC991AF41E7E00EFF6D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F27ACC81AF4260E00EFF6D2 /* Base Classes */,
+				9F27AC681AF41AA100EFF6D2 /* CFKAccount.h */,
+				9F27AC691AF41AA100EFF6D2 /* CFKAccount.m */,
+				9F27AC6B1AF41AAC00EFF6D2 /* CFKCatalog.h */,
+				9F27AC6C1AF41AAC00EFF6D2 /* CFKCatalog.m */,
+				9F27AC6E1AF41ABD00EFF6D2 /* CFKDiscount.h */,
+				9F27AC6F1AF41ABD00EFF6D2 /* CFKDiscount.m */,
+				9F580A581AF2EF2F0024F717 /* CFKItem.h */,
+				9F580A591AF2EF2F0024F717 /* CFKItem.m */,
+				9F27AC801AF41BC500EFF6D2 /* CFKLocation.h */,
+				9F27AC811AF41BC500EFF6D2 /* CFKLocation.m */,
+				9F27AC741AF41ADA00EFF6D2 /* CFKOption.h */,
+				9F27AC751AF41ADA00EFF6D2 /* CFKOption.m */,
+				9F27AC831AF41BDC00EFF6D2 /* CFKOptionGroup.h */,
+				9F27AC841AF41BDC00EFF6D2 /* CFKOptionGroup.m */,
+				9F27AC8C1AF41C5100EFF6D2 /* CFKPrice.h */,
+				9F27AC8D1AF41C5100EFF6D2 /* CFKPrice.m */,
+				9F27AC861AF41BF500EFF6D2 /* CFKPrinter.h */,
+				9F27AC871AF41BF500EFF6D2 /* CFKPrinter.m */,
+				9F27AC921AF41C6900EFF6D2 /* CFKStore.h */,
+				9F27AC931AF41C6900EFF6D2 /* CFKStore.m */,
+				9F27AC711AF41ACB00EFF6D2 /* CFKTax.h */,
+				9F27AC721AF41ACB00EFF6D2 /* CFKTax.m */,
+				9F27AC8F1AF41C5900EFF6D2 /* CFKUnit.h */,
+				9F27AC901AF41C5900EFF6D2 /* CFKUnit.m */,
+				9F27AC7D1AF41BB000EFF6D2 /* CFKImage.h */,
+				9F27AC7E1AF41BB000EFF6D2 /* CFKImage.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9F27ACC81AF4260E00EFF6D2 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F27AC7A1AF41B7A00EFF6D2 /* CFKBase.h */,
+				9F27AC7B1AF41B7A00EFF6D2 /* CFKBase.m */,
+				9F27AC771AF41AF500EFF6D2 /* CFKConfigurable.h */,
+				9F27AC781AF41AF500EFF6D2 /* CFKConfigurable.m */,
+				9F27AC891AF41C2400EFF6D2 /* CFKScannable.h */,
+				9F27AC8A1AF41C2400EFF6D2 /* CFKScannable.m */,
+			);
+			name = "Base Classes";
+			sourceTree = "<group>";
+		};
+		9F580A261AF2EBD50024F717 = {
+			isa = PBXGroup;
+			children = (
+				9F580A311AF2EBD50024F717 /* ItemEditor */,
+				9F580A481AF2EBD60024F717 /* ItemEditorTests */,
+				9F580A301AF2EBD50024F717 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F580A301AF2EBD50024F717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F580A2F1AF2EBD50024F717 /* ItemEditor.app */,
+				9F580A451AF2EBD60024F717 /* ItemEditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F580A311AF2EBD50024F717 /* ItemEditor */ = {
+			isa = PBXGroup;
+			children = (
+				9F27AC991AF41E7E00EFF6D2 /* Models */,
+				9F27AC981AF41E5900EFF6D2 /* Controllers */,
+				9F580A341AF2EBD50024F717 /* AppDelegate.h */,
+				9F580A351AF2EBD50024F717 /* AppDelegate.m */,
+				9F580A391AF2EBD50024F717 /* ViewController.h */,
+				9F580A3A1AF2EBD50024F717 /* ViewController.m */,
+				9F580A3C1AF2EBD50024F717 /* Images.xcassets */,
+				9F580A3E1AF2EBD50024F717 /* Main.storyboard */,
+				9F580A321AF2EBD50024F717 /* Supporting Files */,
+				9F27ACBF1AF4208100EFF6D2 /* WindowController.h */,
+				9F27ACC01AF4208100EFF6D2 /* WindowController.m */,
+				9F27ACC21AF4209300EFF6D2 /* TabController.h */,
+				9F27ACC31AF4209300EFF6D2 /* TabController.m */,
+				9F27ACC51AF420AA00EFF6D2 /* DataSource.h */,
+				9F27ACC61AF420AA00EFF6D2 /* DataSource.m */,
+			);
+			path = ItemEditor;
+			sourceTree = "<group>";
+		};
+		9F580A321AF2EBD50024F717 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F580A331AF2EBD50024F717 /* Info.plist */,
+				9F580A371AF2EBD50024F717 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F580A481AF2EBD60024F717 /* ItemEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F580A4B1AF2EBD60024F717 /* ItemEditorTests.m */,
+				9F580A491AF2EBD60024F717 /* Supporting Files */,
+			);
+			path = ItemEditorTests;
+			sourceTree = "<group>";
+		};
+		9F580A491AF2EBD60024F717 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F580A4A1AF2EBD60024F717 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F580A2E1AF2EBD50024F717 /* ItemEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F580A4F1AF2EBD60024F717 /* Build configuration list for PBXNativeTarget "ItemEditor" */;
+			buildPhases = (
+				9F580A2B1AF2EBD50024F717 /* Sources */,
+				9F580A2C1AF2EBD50024F717 /* Frameworks */,
+				9F580A2D1AF2EBD50024F717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ItemEditor;
+			productName = ItemEditor;
+			productReference = 9F580A2F1AF2EBD50024F717 /* ItemEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F580A441AF2EBD60024F717 /* ItemEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F580A521AF2EBD60024F717 /* Build configuration list for PBXNativeTarget "ItemEditorTests" */;
+			buildPhases = (
+				9F580A411AF2EBD60024F717 /* Sources */,
+				9F580A421AF2EBD60024F717 /* Frameworks */,
+				9F580A431AF2EBD60024F717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F580A471AF2EBD60024F717 /* PBXTargetDependency */,
+			);
+			name = ItemEditorTests;
+			productName = ItemEditorTests;
+			productReference = 9F580A451AF2EBD60024F717 /* ItemEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F580A271AF2EBD50024F717 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Peter Barnes";
+				TargetAttributes = {
+					9F580A2E1AF2EBD50024F717 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9F580A441AF2EBD60024F717 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 9F580A2E1AF2EBD50024F717;
+					};
+				};
+			};
+			buildConfigurationList = 9F580A2A1AF2EBD50024F717 /* Build configuration list for PBXProject "ItemEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F580A261AF2EBD50024F717;
+			productRefGroup = 9F580A301AF2EBD50024F717 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F580A2E1AF2EBD50024F717 /* ItemEditor */,
+				9F580A441AF2EBD60024F717 /* ItemEditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F580A2D1AF2EBD50024F717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F580A3D1AF2EBD50024F717 /* Images.xcassets in Resources */,
+				9F580A401AF2EBD50024F717 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F580A431AF2EBD60024F717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F580A2B1AF2EBD50024F717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F27AC7C1AF41B7A00EFF6D2 /* CFKBase.m in Sources */,
+				9F27AC821AF41BC500EFF6D2 /* CFKLocation.m in Sources */,
+				9F580A3B1AF2EBD50024F717 /* ViewController.m in Sources */,
+				9F27AC941AF41C6900EFF6D2 /* CFKStore.m in Sources */,
+				9F27AC761AF41ADA00EFF6D2 /* CFKOption.m in Sources */,
+				9F27AC9C1AF41F6700EFF6D2 /* CatalogViewController.m in Sources */,
+				9F27AC911AF41C5900EFF6D2 /* CFKUnit.m in Sources */,
+				9F27ACBB1AF4201900EFF6D2 /* ItemViewController.m in Sources */,
+				9F27AC881AF41BF500EFF6D2 /* CFKPrinter.m in Sources */,
+				9F27ACC11AF4208100EFF6D2 /* WindowController.m in Sources */,
+				9F580A5A1AF2EF2F0024F717 /* CFKItem.m in Sources */,
+				9F27AC731AF41ACB00EFF6D2 /* CFKTax.m in Sources */,
+				9F27ACB71AF4200B00EFF6D2 /* PrinterViewController.m in Sources */,
+				9F27ACB31AF41FF800EFF6D2 /* TaxViewController.m in Sources */,
+				9F27ACAD1AF41FD500EFF6D2 /* StoreViewController.m in Sources */,
+				9F27AC8B1AF41C2400EFF6D2 /* CFKScannable.m in Sources */,
+				9F27AC6A1AF41AA100EFF6D2 /* CFKAccount.m in Sources */,
+				9F580A381AF2EBD50024F717 /* main.m in Sources */,
+				9F27ACAA1AF41FC500EFF6D2 /* UnitViewController.m in Sources */,
+				9F27AC701AF41ABD00EFF6D2 /* CFKDiscount.m in Sources */,
+				9F580A361AF2EBD50024F717 /* AppDelegate.m in Sources */,
+				9F27AC971AF41E4500EFF6D2 /* AccountViewController.m in Sources */,
+				9F27ACA31AF41F8A00EFF6D2 /* LocationViewController.m in Sources */,
+				9F27AC791AF41AF500EFF6D2 /* CFKConfigurable.m in Sources */,
+				9F27ACC71AF420AA00EFF6D2 /* DataSource.m in Sources */,
+				9F27ACA71AF41FAD00EFF6D2 /* PriceViewController.m in Sources */,
+				9F27ACB01AF41FE800EFF6D2 /* OptionViewController.m in Sources */,
+				9F27AC9F1AF41F7900EFF6D2 /* OptionGroupViewController.m in Sources */,
+				9F27AC6D1AF41AAC00EFF6D2 /* CFKCatalog.m in Sources */,
+				9F27AC851AF41BDC00EFF6D2 /* CFKOptionGroup.m in Sources */,
+				9F27AC8E1AF41C5100EFF6D2 /* CFKPrice.m in Sources */,
+				9F27ACBE1AF4205600EFF6D2 /* DiscountViewController.m in Sources */,
+				9F27ACC41AF4209300EFF6D2 /* TabController.m in Sources */,
+				9F27AC7F1AF41BB000EFF6D2 /* CFKImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F580A411AF2EBD60024F717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F580A4C1AF2EBD60024F717 /* ItemEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F580A471AF2EBD60024F717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F580A2E1AF2EBD50024F717 /* ItemEditor */;
+			targetProxy = 9F580A461AF2EBD60024F717 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F580A3E1AF2EBD50024F717 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F580A3F1AF2EBD50024F717 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F580A4D1AF2EBD60024F717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9F580A4E1AF2EBD60024F717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9F580A501AF2EBD60024F717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ItemEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F580A511AF2EBD60024F717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ItemEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9F580A531AF2EBD60024F717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ItemEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItemEditor.app/Contents/MacOS/ItemEditor";
+			};
+			name = Debug;
+		};
+		9F580A541AF2EBD60024F717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ItemEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItemEditor.app/Contents/MacOS/ItemEditor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F580A2A1AF2EBD50024F717 /* Build configuration list for PBXProject "ItemEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F580A4D1AF2EBD60024F717 /* Debug */,
+				9F580A4E1AF2EBD60024F717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F580A4F1AF2EBD60024F717 /* Build configuration list for PBXNativeTarget "ItemEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F580A501AF2EBD60024F717 /* Debug */,
+				9F580A511AF2EBD60024F717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F580A521AF2EBD60024F717 /* Build configuration list for PBXNativeTarget "ItemEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F580A531AF2EBD60024F717 /* Debug */,
+				9F580A541AF2EBD60024F717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F580A271AF2EBD50024F717 /* Project object */;
+}
