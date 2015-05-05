@@ -63,6 +63,14 @@
     [aCoder encodeObject:self.items forKey:@"items"];
 }
 
+- (NSString *) pathFromUserLibraryPath:(NSString *)inSubPath
+{
+    NSArray *domains = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString *baseDir = [domains objectAtIndex:0];
+    NSString *result = [baseDir stringByAppendingPathComponent:inSubPath];
+    return result;
+}
+
 - (void)save {
     
     [NSKeyedArchiver archiveRootObject:self toFile:@"/Users/peterbarnes/Desktop/data.plist"];
