@@ -17,12 +17,20 @@
 
 - (void)windowDidLoad {
     [super windowDidLoad];
-    
-    DataSource *dataSource = [[DataSource alloc] init];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationShouldSave) name:@"applicationShouldSaveNotification" object:nil];
+    DataSource *dataSource = [DataSource load];
     self.contentViewController.representedObject = dataSource;
     self.dataSource = dataSource;
 
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)applicationShouldSave {
+    [self.dataSource save];
 }
 
 @end

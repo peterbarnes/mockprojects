@@ -15,11 +15,26 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    NSLog(@"application running");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+    NSLog(@"application stopping");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"applicationShouldSaveNotification" object:nil];
+    NSLog(@"application notification sent for saving");
 }
+
+//- (void)awakeFromNib
+//{
+//    
+//    [NSApp setDelegate:self];
+//    [self.dataSource load];
+//    
+//}
+//
+//- (void)applicationWillTerminate
+//{
+//    [self.dataSource save];
+//}
 
 @end

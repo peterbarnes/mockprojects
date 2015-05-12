@@ -63,24 +63,48 @@
     [aCoder encodeObject:self.items forKey:@"items"];
 }
 
-- (NSString *) pathFromUserLibraryPath:(NSString *)inSubPath
+
+
++ (NSString *)applicationSupportDirectory
 {
-    NSArray *domains = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    NSString *baseDir = [domains objectAtIndex:0];
-    NSString *result = [baseDir stringByAppendingPathComponent:inSubPath];
-    return result;
+    NSLog(@"checking app support directory");
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSString *folder = @"~/Library/Application Support/ItemEditor";
+    folder = [folder stringByExpandingTildeInPath];
+    
+    if ([fileManager fileExistsAtPath:folder] == NO) {
+        NSLog(@"created folder");
+        [fileManager createDirectoryAtPath:folder withIntermediateDirectories:NO attributes:nil error:nil];
+    }
+    
+    NSString *fileName = @"data.plist";
+    NSLog(@"done with app support");
+    return [folder stringByAppendingPathComponent:fileName];
 }
 
 - (void)save {
-    
-    [NSKeyedArchiver archiveRootObject:self toFile:@"/Users/peterbarnes/Desktop/data.plist"];
+    NSLog(@"Application saving");
+//    NSString *path = [self applicationSupportDirectory];
+    NSString *path = [[self class] applicationSupportDirectory];
+    [NSKeyedArchiver archiveRootObject:self toFile:path];
+//    NSString *appendComponent = @"/data.plist";
+//    NSString *applicationSupportDir = [self applicationSupportDirectory];
+//    NSString *path = [applicationSupportDir stringByAppendingString:appendComponent];
+//    [NSKeyedArchiver archiveRootObject:self toFile:path];
     
 }
 
 + (instancetype)load {
-    
-    return [NSKeyedUnarchiver unarchiveObjectWithFile:@"/Users/peterbarnes/Desktop/data.plist"];
-    
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    NSLog(@"Application loading");
+    NSString *path = [self applicationSupportDirectory];
+    if ([fileManager fileExistsAtPath:path] == NO) {
+        return [[DataSource alloc] init];
+    } else {
+        return [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    }
+//    return [NSKeyedUnarchiver unarchiveObjectWithFile:@"/Users/peterbarnes/Desktop/data.plist"];
 }
 
 @end

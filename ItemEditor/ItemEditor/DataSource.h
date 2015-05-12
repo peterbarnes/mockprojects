@@ -23,8 +23,7 @@
 @property (nonatomic, strong) NSMutableArray *catalogs;
 @property (nonatomic, strong) NSMutableArray *items;
 
-@property (nonatomic, strong) NSFileManager *manager;
-
++ (NSString *)applicationSupportDirectory;
 - (void)save;
 + (instancetype)load;
 

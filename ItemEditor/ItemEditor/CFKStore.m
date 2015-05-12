@@ -18,7 +18,7 @@
         self.incentive = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.incentiveMax = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.incentiveMin = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
-        self.name = @"";
+        self.name = @"New Store";
         self.stripeID = @"";
         self.image = [[CFKImage alloc] init];
     }

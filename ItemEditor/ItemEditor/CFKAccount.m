@@ -18,11 +18,11 @@
         self.balance = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.credit = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.email = @"";
-        self.firstName = @"";
+        self.firstName = @"New Account";
         self.lastName = @"";
         self.phone = @"";
         self.image = [[CFKImage alloc] init];
-        self.store = [[CFKStore alloc] init];
+        self.store = nil;
     }
     return self;
 }
