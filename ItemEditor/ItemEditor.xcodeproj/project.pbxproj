@@ -44,6 +44,7 @@
 		9F580A401AF2EBD50024F717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F580A3E1AF2EBD50024F717 /* Main.storyboard */; };
 		9F580A4C1AF2EBD60024F717 /* ItemEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A4B1AF2EBD60024F717 /* ItemEditorTests.m */; };
 		9F580A5A1AF2EF2F0024F717 /* CFKItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A591AF2EF2F0024F717 /* CFKItem.m */; };
+		9FA6B8371B05473C00DA4893 /* ImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6B8361B05473C00DA4893 /* ImageTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,8 @@
 		9F580A4B1AF2EBD60024F717 /* ItemEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemEditorTests.m; sourceTree = "<group>"; };
 		9F580A581AF2EF2F0024F717 /* CFKItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKItem.h; sourceTree = "<group>"; };
 		9F580A591AF2EF2F0024F717 /* CFKItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKItem.m; sourceTree = "<group>"; };
+		9FA6B8351B05473C00DA4893 /* ImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformer.h; sourceTree = "<group>"; };
+		9FA6B8361B05473C00DA4893 /* ImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +268,8 @@
 				9F27ACC31AF4209300EFF6D2 /* TabController.m */,
 				9F27ACC51AF420AA00EFF6D2 /* DataSource.h */,
 				9F27ACC61AF420AA00EFF6D2 /* DataSource.m */,
+				9FA6B8351B05473C00DA4893 /* ImageTransformer.h */,
+				9FA6B8361B05473C00DA4893 /* ImageTransformer.m */,
 			);
 			path = ItemEditor;
 			sourceTree = "<group>";
@@ -398,6 +403,7 @@
 				9F27AC821AF41BC500EFF6D2 /* CFKLocation.m in Sources */,
 				9F580A3B1AF2EBD50024F717 /* ViewController.m in Sources */,
 				9F27AC941AF41C6900EFF6D2 /* CFKStore.m in Sources */,
+				9FA6B8371B05473C00DA4893 /* ImageTransformer.m in Sources */,
 				9F27AC761AF41ADA00EFF6D2 /* CFKOption.m in Sources */,
 				9F27AC9C1AF41F6700EFF6D2 /* CatalogViewController.m in Sources */,
 				9F27AC911AF41C5900EFF6D2 /* CFKUnit.m in Sources */,

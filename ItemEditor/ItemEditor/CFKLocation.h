@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKBase.h"
+#import "CFKScannable.h"
 
 @class CFKStore;
 
-@interface CFKLocation : CFKBase
+@interface CFKLocation : CFKScannable
 
 @property (nonatomic, copy) NSString *name;
 

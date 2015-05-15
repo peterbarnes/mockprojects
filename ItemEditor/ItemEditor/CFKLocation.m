@@ -14,8 +14,8 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.name = @"";
-        self.store = [[CFKStore alloc] init];
+        self.name = @"New Location";
+        self.store = nil;
     }
     return self;
 }

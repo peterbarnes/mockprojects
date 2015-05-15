@@ -14,9 +14,9 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.name = @"";
+        self.name = @"New Item";
         self.summary = @"";
-        self.catalog = [[CFKCatalog alloc] init];
+        self.catalog = nil;
     }
     return self;
 }

@@ -15,9 +15,9 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.name = @"";
-        self.image = [[CFKImage alloc] init];
-        self.store = [[CFKStore alloc] init];
+        self.name = @"New Catalog";
+        self.image = nil;
+        self.store = nil;
     }
     return self;
 }
