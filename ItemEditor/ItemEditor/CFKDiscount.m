@@ -14,7 +14,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.store = [[CFKStore alloc] init];
+        self.store = nil;
     }
     return self;
 }
