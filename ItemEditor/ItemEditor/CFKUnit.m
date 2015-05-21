@@ -17,11 +17,11 @@
     self = [super init];
     if (self) {
         self.configuration = [NSMutableDictionary dictionary];
-        self.saleable = [NSNumber numberWithBool:YES];
+        self.expiresAt = [NSDate date];
         self.stock = [NSNumber numberWithInt:0];
-        self.image = [[CFKImage alloc] init];
-        self.item = [[CFKItem alloc] init];
-        self.location = [[CFKLocation alloc] init];
+        self.container = nil;
+        self.item = nil;
+        self.lines = nil;
     }
     return self;
 }
@@ -30,22 +30,22 @@
     self = [self init];
     if (self) {
         self.configuration = [aDecoder decodeObjectForKey:@"configuration"];
-        self.saleable = [aDecoder decodeObjectForKey:@"saleable"];
+        self.expiresAt = [aDecoder decodeObjectForKey:@"expiresAt"];
         self.stock = [aDecoder decodeObjectForKey:@"stock"];
-        self.image = [aDecoder decodeObjectForKey:@"image"];
+        self.container = [aDecoder decodeObjectForKey:@"container"];
         self.item = [aDecoder decodeObjectForKey:@"item"];
-        self.location = [aDecoder decodeObjectForKey:@"location"];
+        self.lines = [aDecoder decodeObjectForKey:@"lines"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.configuration forKey:@"configuration"];
-    [aCoder encodeObject:self.saleable forKey:@"saleable"];
+    [aCoder encodeObject:self.expiresAt forKey:@"expiresAt"];
     [aCoder encodeObject:self.stock forKey:@"stock"];
-    [aCoder encodeObject:self.image forKey:@"image"];
+    [aCoder encodeObject:self.container forKey:@"container"];
     [aCoder encodeObject:self.item forKey:@"item"];
-    [aCoder encodeObject:self.location forKey:@"location"];
+    [aCoder encodeObject:self.lines forKey:@"lines"];
 }
 
 @end

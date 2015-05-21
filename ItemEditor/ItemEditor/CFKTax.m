@@ -8,13 +8,15 @@
 
 #import "CFKTax.h"
 #import "CFKStore.h"
+#import "CFKPrice.h"
 
 @implementation CFKTax
 
 - (id)init {
     self = [super init];
     if (self) {
-        self.store = [[CFKStore alloc] init];
+        self.prices = nil;
+        self.store = nil;
     }
     return self;
 }
@@ -22,12 +24,14 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [self init];
     if (self) {
+        self.prices = [aDecoder decodeObjectForKey:@"prices"];
         self.store = [aDecoder decodeObjectForKey:@"store"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.prices forKey:@"prices"];
     [aCoder encodeObject:self.store forKey:@"store"];
 }
 

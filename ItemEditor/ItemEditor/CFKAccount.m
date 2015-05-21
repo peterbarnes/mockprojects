@@ -7,7 +7,7 @@
 //
 
 #import "CFKAccount.h"
-#import "CFKImage.h"
+#import "CFKPayment.h"
 #import "CFKStore.h"
 
 @implementation CFKAccount
@@ -18,10 +18,10 @@
         self.balance = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.credit = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.email = @"";
-        self.firstName = @"New Account";
-        self.lastName = @"";
+        self.name = @"New Account";
         self.phone = @"";
-        self.image = [[CFKImage alloc] init];
+        self.surname = @"";
+        self.payments = nil;
         self.store = nil;
     }
     return self;
@@ -33,10 +33,10 @@
         self.balance = [aDecoder decodeObjectForKey:@"balance"];
         self.credit = [aDecoder decodeObjectForKey:@"credit"];
         self.email = [aDecoder decodeObjectForKey:@"email"];
-        self.firstName = [aDecoder decodeObjectForKey:@"firstName"];
-        self.lastName = [aDecoder decodeObjectForKey:@"lastName"];
+        self.name = [aDecoder decodeObjectForKey:@"name"];
         self.phone = [aDecoder decodeObjectForKey:@"phone"];
-        self.image = [aDecoder decodeObjectForKey:@"image"];
+        self.surname = [aDecoder decodeObjectForKey:@"surname"];
+        self.payments = [aDecoder decodeObjectForKey:@"payments"];
         self.store = [aDecoder decodeObjectForKey:@"store"];
     }
     return self;
@@ -46,10 +46,10 @@
     [aCoder encodeObject:self.balance forKey:@"balance"];
     [aCoder encodeObject:self.credit forKey:@"credit"];
     [aCoder encodeObject:self.email forKey:@"email"];
-    [aCoder encodeObject:self.firstName forKey:@"firstName"];
-    [aCoder encodeObject:self.lastName forKey:@"lastName"];
+    [aCoder encodeObject:self.name forKey:@"name"];
     [aCoder encodeObject:self.phone forKey:@"phone"];
-    [aCoder encodeObject:self.image forKey:@"image"];
+    [aCoder encodeObject:self.surname forKey:@"surname"];
+    [aCoder encodeObject:self.payments forKey:@"payments"];
     [aCoder encodeObject:self.store forKey:@"store"];
 }
 

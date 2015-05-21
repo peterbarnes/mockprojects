@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "CFKConfigurable.h"
 
-@class CFKStore;
+@class CFKStore, CFKPrice;
 
 @interface CFKTax : CFKConfigurable
 
+@property (nonatomic, strong) CFKPrice *prices;
 @property (nonatomic, strong) CFKStore *store;
 
 @end

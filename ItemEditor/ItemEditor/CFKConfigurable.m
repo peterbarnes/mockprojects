@@ -14,9 +14,6 @@
     self = [super init];
     if (self) {
         self.amount = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
-        self.automatic = [NSNumber numberWithBool:NO];
-        self.configurable = [NSNumber numberWithBool:YES];
-        self.name = @"";
     }
     return self;
 }
@@ -25,18 +22,12 @@
     self = [self init];
     if (self) {
         self.amount = [aDecoder decodeObjectForKey:@"amount"];
-        self.automatic = [aDecoder decodeObjectForKey:@"automatic"];
-        self.configurable = [aDecoder decodeObjectForKey:@"configurable"];
-        self.name = [aDecoder decodeObjectForKey:@"name"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.amount forKey:@"amount"];
-    [aCoder encodeObject:self.automatic forKey:@"automatic"];
-    [aCoder encodeObject:self.configurable forKey:@"configurable"];
-    [aCoder encodeObject:self.name forKey:@"name"];
 }
 
 @end

@@ -6,11 +6,16 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKBase.h"
+#import "CFKScannable.h"
 
-@interface CFKOptionGroup : CFKBase
+@class CFKOption, CFKPrice;
 
-@property (nonatomic, copy) NSString *name;
+@interface CFKOptionGroup : CFKScannable
+
 @property (nonatomic, strong) NSNumber *selection;
+
+// RELATIONSHIPS
+@property (nonatomic, strong) CFKOption *options;
+@property (nonatomic, strong) CFKPrice *prices;
 
 @end

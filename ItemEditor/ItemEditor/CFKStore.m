@@ -14,13 +14,24 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.allowNegative = [NSNumber numberWithBool:NO];
+        self.address = @"";
+        self.email = @"";
         self.incentive = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.incentiveMax = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.incentiveMin = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
-        self.name = @"New Store";
+        self.phone = @"";
         self.stripeID = @"";
-        self.image = [[CFKImage alloc] init];
+        self.accounts = nil;
+        self.catalogs = nil;
+        self.containers = nil;
+        self.discounts = nil;
+        self.image = nil;
+        self.logs = nil;
+        self.printers = nil;
+        self.taxes = nil;
+        self.templates = nil;
+        self.tills = nil;
+        self.transactions = nil;
     }
     return self;
 }
@@ -28,25 +39,46 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [self init];
     if (self) {
-        self.allowNegative = [aDecoder decodeObjectForKey:@"allowNegative"];
+        self.address = [aDecoder decodeObjectForKey:@"address"];
+        self.email = [aDecoder decodeObjectForKey:@"email"];
         self.incentive = [aDecoder decodeObjectForKey:@"incentive"];
         self.incentiveMax = [aDecoder decodeObjectForKey:@"incentiveMax"];
         self.incentiveMin = [aDecoder decodeObjectForKey:@"incentiveMin"];
-        self.name = [aDecoder decodeObjectForKey:@"name"];
+        self.phone = [aDecoder decodeObjectForKey:@"phone"];
         self.stripeID = [aDecoder decodeObjectForKey:@"stripeID"];
+        self.accounts = [aDecoder decodeObjectForKey:@"accounts"];
+        self.catalogs = [aDecoder decodeObjectForKey:@"catalogs"];
+        self.containers = [aDecoder decodeObjectForKey:@"containers"];
+        self.discounts = [aDecoder decodeObjectForKey:@"discounts"];
         self.image = [aDecoder decodeObjectForKey:@"image"];
+        self.logs = [aDecoder decodeObjectForKey:@"logs"];
+        self.printers = [aDecoder decodeObjectForKey:@"printers"];
+        self.taxes = [aDecoder decodeObjectForKey:@"taxes"];
+        self.templates = [aDecoder decodeObjectForKey:@"templates"];
+        self.tills = [aDecoder decodeObjectForKey:@"tills"];
+        self.transactions = [aDecoder decodeObjectForKey:@"transactions"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:self.allowNegative forKey:@"allowNegative"];
+    [aCoder encodeObject:self.address forKey:@"address"];
     [aCoder encodeObject:self.incentive forKey:@"incentive"];
     [aCoder encodeObject:self.incentiveMax forKey:@"incentiveMax"];
     [aCoder encodeObject:self.incentiveMin forKey:@"incentiveMin"];
-    [aCoder encodeObject:self.name forKey:@"name"];
+    [aCoder encodeObject:self.phone forKey:@"phone"];
     [aCoder encodeObject:self.stripeID forKey:@"stripeID"];
+    [aCoder encodeObject:self.accounts forKey:@"accounts"];
+    [aCoder encodeObject:self.catalogs forKey:@"catalogs"];
+    [aCoder encodeObject:self.containers forKey:@"containers"];
+    [aCoder encodeObject:self.discounts forKey:@"discounts"];
     [aCoder encodeObject:self.image forKey:@"image"];
+    [aCoder encodeObject:self.logs forKey:@"logs"];
+    [aCoder encodeObject:self.printers forKey:@"printers"];
+    [aCoder encodeObject:self.taxes forKey:@"taxes"];
+    [aCoder encodeObject:self.templates forKey:@"templates"];
+    [aCoder encodeObject:self.tills forKey:@"tills"];
+    [aCoder encodeObject:self.transactions forKey:@"transactions"];
 }
 
 @end

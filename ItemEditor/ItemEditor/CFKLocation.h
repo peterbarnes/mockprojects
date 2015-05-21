@@ -8,14 +8,13 @@
 
 #import "CFKScannable.h"
 
-@class CFKStore;
-
 @interface CFKLocation : CFKScannable
 
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSDecimalNumber *latitude;
+@property (nonatomic, strong) NSDecimalNumber *longitude;
 
 // RELATIONSHIPS
 @property (nonatomic, strong) CFKLocation *parent;
-@property (nonatomic, strong) CFKStore *store;
+@property (nonatomic, strong) CFKLocation *children;
 
 @end

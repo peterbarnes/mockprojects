@@ -8,16 +8,16 @@
 
 #import "CFKScannable.h"
 
-@class CFKImage, CFKItem;
+@class CFKDiscount, CFKOptionGroup, CFKItem, CFKTax;
 
 @interface CFKPrice : CFKScannable
 
 @property (nonatomic, strong) NSDecimalNumber *amount;
-@property (nonatomic, strong) NSNumber *automatic;
-@property (nonatomic, copy) NSString *name;
 
 // RELATIONSHIPS
-@property (nonatomic, strong) CFKImage *image;
+@property (nonatomic, strong) CFKDiscount *discounts;
+@property (nonatomic, strong) CFKOptionGroup *groups;
 @property (nonatomic, strong) CFKItem *item;
+@property (nonatomic, strong) CFKTax *taxes;
 
 @end

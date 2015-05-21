@@ -6,22 +6,21 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "CFKBase.h"
+#import "CFKScannable.h"
 
-@class CFKImage, CFKStore;
+@class CFKPayment, CFKStore;
 
-@interface CFKAccount : CFKBase
+@interface CFKAccount : CFKScannable
 
+@property (nonatomic, copy) NSString *address;
 @property (nonatomic, strong) NSDecimalNumber *balance;
 @property (nonatomic, strong) NSDecimalNumber *credit;
 @property (nonatomic, copy) NSString *email;
-@property (nonatomic, copy) NSString *firstName;
-@property (nonatomic, copy) NSString *lastName;
 @property (nonatomic, copy) NSString *phone;
+@property (nonatomic, copy) NSString *surname;
 
 // RELATIONSHIPS
-@property (nonatomic, strong) CFKImage *image;
+@property (nonatomic, strong) CFKPayment *payments;
 @property (nonatomic, strong) CFKStore *store;
 
 @end

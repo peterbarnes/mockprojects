@@ -7,15 +7,16 @@
 //
 
 #import "CFKLocation.h"
-#import "CFKStore.h"
 
 @implementation CFKLocation
 
 - (id)init {
     self = [super init];
     if (self) {
-        self.name = @"New Location";
-        self.store = nil;
+        self.latitude = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
+        self.longitude = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
+        self.parent = nil;
+        self.children = nil;
     }
     return self;
 }
@@ -23,15 +24,19 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [self init];
     if (self) {
-        self.name = [aDecoder decodeObjectForKey:@"name"];
-        self.store = [aDecoder decodeObjectForKey:@"store"];
+        self.latitude = [aDecoder decodeObjectForKey:@"latitude"];
+        self.longitude = [aDecoder decodeObjectForKey:@"longitude"];
+        self.parent = [aDecoder decodeObjectForKey:@"parent"];
+        self.children = [aDecoder decodeObjectForKey:@"children"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:self.name forKey:@"name"];
-    [aCoder encodeObject:self.store forKey:@"store"];
+    [aCoder encodeObject:self.latitude forKey:@"latitude"];
+    [aCoder encodeObject:self.longitude forKey:@"longitude"];
+    [aCoder encodeObject:self.parent forKey:@"parent"];
+    [aCoder encodeObject:self.children forKey:@"children"];
 }
 
 @end

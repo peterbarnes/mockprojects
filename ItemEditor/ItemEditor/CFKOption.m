@@ -14,7 +14,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.group = [[CFKOptionGroup alloc] init];
+        self.group = nil;
     }
     return self;
 }

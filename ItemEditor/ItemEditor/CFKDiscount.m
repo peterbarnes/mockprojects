@@ -8,6 +8,7 @@
 
 #import "CFKDiscount.h"
 #import "CFKStore.h"
+#import "CFKPrice.h"
 
 @implementation CFKDiscount
 
@@ -15,6 +16,7 @@
     self = [super init];
     if (self) {
         self.store = nil;
+        self.prices = nil;
     }
     return self;
 }
@@ -23,12 +25,14 @@
     self = [self init];
     if (self) {
         self.store = [aDecoder decodeObjectForKey:@"store"];
+        self.prices = [aDecoder decodeObjectForKey:@"prices"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.store forKey:@"store"];
+    [aCoder encodeObject:self.prices forKey:@"prices"];
 }
 
 @end

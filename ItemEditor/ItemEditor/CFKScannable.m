@@ -7,6 +7,7 @@
 //
 
 #import "CFKScannable.h"
+#import "CFKImage.h"
 
 @implementation CFKScannable
 
@@ -14,6 +15,7 @@
     self = [super init];
     if (self) {
         self.sku = @"";
+        self.image = nil;
     }
     return self;
 }
@@ -22,12 +24,14 @@
     self = [self init];
     if (self) {
         self.sku = [aDecoder decodeObjectForKey:@"sku"];
+        self.image = [aDecoder decodeObjectForKey:@"image"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.sku forKey:@"sku"];
+    [aCoder encodeObject:self.image forKey:@"image"];
 }
 
 @end

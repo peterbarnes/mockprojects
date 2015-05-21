@@ -6,18 +6,16 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKBase.h"
+#import "CFKLocation.h"
 
-@class CFKStore;
+@class CFKStore, CFKTemplate;
 
-@interface CFKPrinter : CFKBase
+@interface CFKPrinter : CFKLocation
 
-@property (nonatomic, copy) NSString *file;
-@property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *path;
-@property (nonatomic, strong) NSNumber *type;
 
 // RELATIONSHIPS
 @property (nonatomic, strong) CFKStore *store;
+@property (nonatomic, strong) CFKTemplate *templates;
 
 @end

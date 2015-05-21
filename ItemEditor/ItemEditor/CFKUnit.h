@@ -8,17 +8,17 @@
 
 #import "CFKScannable.h"
 
-@class CFKImage, CFKItem, CFKLocation;
+@class CFKContainer, CFKItem, CFKLine;
 
 @interface CFKUnit : CFKScannable
 
 @property (nonatomic, strong) NSMutableDictionary *configuration;
-@property (nonatomic, strong) NSNumber *saleable;
+@property (nonatomic, strong) NSDate *expiresAt;
 @property (nonatomic, strong) NSNumber *stock;
 
 // RELATIONSHIPS
-@property (nonatomic, strong) CFKImage *image;
+@property (nonatomic, strong) CFKContainer *container;
 @property (nonatomic, strong) CFKItem *item;
-@property (nonatomic, strong) CFKLocation *location;
+@property (nonatomic, strong) CFKLine *lines;
 
 @end

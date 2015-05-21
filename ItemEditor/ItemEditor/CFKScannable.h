@@ -8,8 +8,13 @@
 
 #import "CFKBase.h"
 
+@class CFKImage;
+
 @interface CFKScannable : CFKBase
 
 @property (nonatomic, copy) NSString *sku;
+
+// RELATIONSHIPS
+@property (nonatomic, strong) CFKImage *image;
 
 @end

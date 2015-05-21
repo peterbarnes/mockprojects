@@ -12,8 +12,5 @@
 @interface CFKConfigurable : CFKBase
 
 @property (nonatomic, strong) NSDecimalNumber *amount;
-@property (nonatomic, strong) NSNumber *automatic;
-@property (nonatomic, strong) NSNumber *configurable;
-@property (nonatomic, copy) NSString *name;
 
 @end

@@ -16,10 +16,10 @@
     self = [super init];
     if (self) {
         self.amount = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
-        self.automatic = [NSNumber numberWithBool:NO];
-        self.name = @"";
-        self.image = [[CFKImage alloc] init];
-        self.item = [[CFKItem alloc] init];
+        self.discounts = nil;
+        self.groups = nil;
+        self.item = nil;
+        self.taxes = nil;
     }
     return self;
 }
@@ -28,20 +28,20 @@
     self = [self init];
     if (self) {
         self.amount = [aDecoder decodeObjectForKey:@"amount"];
-        self.automatic = [aDecoder decodeObjectForKey:@"automatic"];
-        self.name = [aDecoder decodeObjectForKey:@"name"];
-        self.image = [aDecoder decodeObjectForKey:@"image"];
+        self.discounts = [aDecoder decodeObjectForKey:@"discounts"];
+        self.groups = [aDecoder decodeObjectForKey:@"groups"];
         self.item = [aDecoder decodeObjectForKey:@"item"];
+        self.taxes = [aDecoder decodeObjectForKey:@"taxes"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.amount forKey:@"amount"];
-    [aCoder encodeObject:self.automatic forKey:@"automatic"];
-    [aCoder encodeObject:self.name forKey:@"name"];
-    [aCoder encodeObject:self.image forKey:@"image"];
+    [aCoder encodeObject:self.discounts forKey:@"discounts"];
+    [aCoder encodeObject:self.groups forKey:@"groups"];
     [aCoder encodeObject:self.item forKey:@"item"];
+    [aCoder encodeObject:self.taxes forKey:@"taxes"];
 }
 
 @end
