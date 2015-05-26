@@ -7,6 +7,8 @@
 //
 
 #import "CFKOptionGroup.h"
+#import "CFKOption.h"
+#import "CFKPrice.h"
 
 @implementation CFKOptionGroup
 

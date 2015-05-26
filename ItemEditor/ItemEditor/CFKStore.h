@@ -8,7 +8,7 @@
 
 #import "CFKBase.h"
 
-@class CFKAccount, CFKCatalog, CFKContainer, CFKDiscount, CFKImage, CFKLog, CFKPrinter, CFKTax, CFKTemplate, CFKTill, CFKTransaction;
+@class CFKAccount, CFKCatalog, CFKContainer, CFKDiscount, CFKImage, CFKLog, CFKPosition, CFKPrinter, CFKTax, CFKTemplate, CFKTill, CFKTransaction;
 
 @interface CFKStore : CFKBase
 
@@ -27,6 +27,7 @@
 @property (nonatomic, strong) CFKDiscount *discounts;
 @property (nonatomic, strong) CFKImage *image;
 @property (nonatomic, strong) CFKLog *logs;
+@property (nonatomic, strong) CFKPosition *positions;
 @property (nonatomic, strong) CFKPrinter *printers;
 @property (nonatomic, strong) CFKTax *taxes;
 @property (nonatomic, strong) CFKTemplate *templates;

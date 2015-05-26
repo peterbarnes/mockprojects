@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CFKBase.h"
+#import "CFKScannable.h"
 
 @class CFKImage, CFKStore;
 
-@interface CFKCatalog : CFKBase
-
-@property (nonatomic, copy) NSString *name;
+@interface CFKCatalog : CFKScannable
 
 // RELATIONSHIPS
 @property (nonatomic, strong) CFKImage *image;

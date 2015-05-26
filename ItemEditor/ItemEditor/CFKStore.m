@@ -7,7 +7,18 @@
 //
 
 #import "CFKStore.h"
+#import "CFKAccount.h"
+#import "CFKCatalog.h"
+#import "CFKContainer.h"
+#import "CFKDiscount.h"
 #import "CFKImage.h"
+#import "CFKLog.h"
+#import "CFKPosition.h"
+#import "CFKPrinter.h"
+#import "CFKTax.h"
+#import "CFKTemplate.h"
+#import "CFKTill.h"
+#import "CFKTransaction.h"
 
 @implementation CFKStore
 

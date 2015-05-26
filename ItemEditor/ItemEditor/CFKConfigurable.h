@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CFKBase.h"
+#import "CFKScannable.h"
 
-@interface CFKConfigurable : CFKBase
+@interface CFKConfigurable : CFKScannable
 
 @property (nonatomic, strong) NSDecimalNumber *amount;
 

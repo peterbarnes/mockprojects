@@ -7,6 +7,8 @@
 //
 
 #import "CFKTemplate.h"
+#import "CFKPrinter.h"
+#import "CFKStore.h"
 
 @implementation CFKTemplate
 

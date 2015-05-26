@@ -7,8 +7,10 @@
 //
 
 #import "CFKPrice.h"
-#import "CFKImage.h"
+#import "CFKDiscount.h"
+#import "CFKOptionGroup.h"
 #import "CFKItem.h"
+#import "CFKTax.h"
 
 @implementation CFKPrice
 

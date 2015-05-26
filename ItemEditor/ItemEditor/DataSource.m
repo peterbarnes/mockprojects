@@ -14,17 +14,26 @@
     self = [super init];
     if (self) {
         self.accounts     = [NSMutableArray array];
-        self.optionGroups = [NSMutableArray array];
-        self.locations    = [NSMutableArray array];
-        self.prices       = [NSMutableArray array];
-        self.units        = [NSMutableArray array];
-        self.stores       = [NSMutableArray array];
-        self.options      = [NSMutableArray array];
-        self.taxes        = [NSMutableArray array];
-        self.printers     = [NSMutableArray array];
-        self.discounts    = [NSMutableArray array];
         self.catalogs     = [NSMutableArray array];
+        self.containers   = [NSMutableArray array];
+        self.customers    = [NSMutableArray array];
+        self.discounts    = [NSMutableArray array];
+        self.employees    = [NSMutableArray array];
         self.items        = [NSMutableArray array];
+        self.jobs         = [NSMutableArray array];
+        self.locations    = [NSMutableArray array];
+        self.options      = [NSMutableArray array];
+        self.optionGroups = [NSMutableArray array];
+        self.positions    = [NSMutableArray array];
+        self.prices       = [NSMutableArray array];
+        self.printers     = [NSMutableArray array];
+        self.stores       = [NSMutableArray array];
+        self.tasks        = [NSMutableArray array];
+        self.taxes        = [NSMutableArray array];
+        self.templates    = [NSMutableArray array];
+        self.tills        = [NSMutableArray array];
+        self.timecards    = [NSMutableArray array];
+        self.units        = [NSMutableArray array];
     }
     return self;
 }
@@ -32,35 +41,49 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [self init];
     if (self) {
-        self.accounts = [aDecoder decodeObjectForKey:@"accounts"];
+        self.accounts     = [aDecoder decodeObjectForKey:@"accounts"];
+        self.catalogs     = [aDecoder decodeObjectForKey:@"catalogs"];
+        self.containers   = [aDecoder decodeObjectForKey:@"containers"];
+        self.customers    = [aDecoder decodeObjectForKey:@"customers"];
+        self.discounts    = [aDecoder decodeObjectForKey:@"discounts"];
+        self.employees    = [aDecoder decodeObjectForKey:@"employees"];
+        self.items        = [aDecoder decodeObjectForKey:@"items"];
+        self.jobs         = [aDecoder decodeObjectForKey:@"jobs"];
+        self.locations    = [aDecoder decodeObjectForKey:@"locations"];
+        self.options      = [aDecoder decodeObjectForKey:@"options"];
         self.optionGroups = [aDecoder decodeObjectForKey:@"optionGroups"];
-        self.locations = [aDecoder decodeObjectForKey:@"locations"];
-        self.prices = [aDecoder decodeObjectForKey:@"prices"];
-        self.units = [aDecoder decodeObjectForKey:@"units"];
-        self.stores = [aDecoder decodeObjectForKey:@"stores"];
-        self.options = [aDecoder decodeObjectForKey:@"options"];
-        self.taxes = [aDecoder decodeObjectForKey:@"taxes"];
-        self.printers = [aDecoder decodeObjectForKey:@"printers"];
-        self.discounts = [aDecoder decodeObjectForKey:@"discounts"];
-        self.catalogs = [aDecoder decodeObjectForKey:@"catalogs"];
-        self.items = [aDecoder decodeObjectForKey:@"items"];
+        self.prices       = [aDecoder decodeObjectForKey:@"prices"];
+        self.printers     = [aDecoder decodeObjectForKey:@"printers"];
+        self.stores       = [aDecoder decodeObjectForKey:@"stores"];
+        self.tasks        = [aDecoder decodeObjectForKey:@"tasks"];
+        self.taxes        = [aDecoder decodeObjectForKey:@"taxes"];
+        self.templates    = [aDecoder decodeObjectForKey:@"templates"];
+        self.timecards    = [aDecoder decodeObjectForKey:@"timecards"];
+        self.units        = [aDecoder decodeObjectForKey:@"units"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:self.accounts forKey:@"accounts"];
+    [aCoder encodeObject:self.accounts     forKey:@"accounts"];
+    [aCoder encodeObject:self.catalogs     forKey:@"catalogs"];
+    [aCoder encodeObject:self.containers   forKey:@"containers"];
+    [aCoder encodeObject:self.customers    forKey:@"customers"];
+    [aCoder encodeObject:self.discounts    forKey:@"discounts"];
+    [aCoder encodeObject:self.employees    forKey:@"employees"];
+    [aCoder encodeObject:self.items        forKey:@"items"];
+    [aCoder encodeObject:self.jobs         forKey:@"jobs"];
+    [aCoder encodeObject:self.locations    forKey:@"locations"];
+    [aCoder encodeObject:self.options      forKey:@"options"];
     [aCoder encodeObject:self.optionGroups forKey:@"optionGroups"];
-    [aCoder encodeObject:self.locations forKey:@"locations"];
-    [aCoder encodeObject:self.prices forKey:@"prices"];
-    [aCoder encodeObject:self.units forKey:@"units"];
-    [aCoder encodeObject:self.stores forKey:@"stores"];
-    [aCoder encodeObject:self.options forKey:@"options"];
-    [aCoder encodeObject:self.taxes forKey:@"taxes"];
-    [aCoder encodeObject:self.printers forKey:@"printers"];
-    [aCoder encodeObject:self.discounts forKey:@"discounts"];
-    [aCoder encodeObject:self.catalogs forKey:@"catalogs"];
-    [aCoder encodeObject:self.items forKey:@"items"];
+    [aCoder encodeObject:self.prices       forKey:@"prices"];
+    [aCoder encodeObject:self.printers     forKey:@"printers"];
+    [aCoder encodeObject:self.stores       forKey:@"stores"];
+    [aCoder encodeObject:self.tasks        forKey:@"tasks"];
+    [aCoder encodeObject:self.taxes        forKey:@"taxes"];
+    [aCoder encodeObject:self.templates    forKey:@"templates"];
+    [aCoder encodeObject:self.timecards    forKey:@"timecards"];
+    [aCoder encodeObject:self.units        forKey:@"units"];
 }
 
 
@@ -85,13 +108,8 @@
 
 - (void)save {
     NSLog(@"Application saving");
-//    NSString *path = [self applicationSupportDirectory];
     NSString *path = [[self class] applicationSupportDirectory];
     [NSKeyedArchiver archiveRootObject:self toFile:path];
-//    NSString *appendComponent = @"/data.plist";
-//    NSString *applicationSupportDir = [self applicationSupportDirectory];
-//    NSString *path = [applicationSupportDir stringByAppendingString:appendComponent];
-//    [NSKeyedArchiver archiveRootObject:self toFile:path];
     
 }
 
@@ -104,7 +122,6 @@
     } else {
         return [NSKeyedUnarchiver unarchiveObjectWithFile:path];
     }
-//    return [NSKeyedUnarchiver unarchiveObjectWithFile:@"/Users/peterbarnes/Desktop/data.plist"];
 }
 
 @end

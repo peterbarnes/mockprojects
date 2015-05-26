@@ -7,6 +7,11 @@
 //
 
 #import "CFKTransaction.h"
+#import "CFKEmployee.h"
+#import "CFKLine.h"
+#import "CFKPayment.h"
+#import "CFKStore.h"
+#import "CFKTill.h"
 
 @implementation CFKTransaction
 

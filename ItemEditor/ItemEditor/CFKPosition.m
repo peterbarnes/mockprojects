@@ -1,21 +1,23 @@
 //
-//  CFKCatalog.m
+//  CFKPosition.m
 //  ItemEditor
 //
-//  Created by Peter Barnes on 5/1/15.
+//  Created by Peter Barnes on 5/26/15.
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKCatalog.h"
-#import "CFKImage.h"
+#import "CFKPosition.h"
+#import "CFKEmployee.h"
+#import "CFKJob.h"
 #import "CFKStore.h"
 
-@implementation CFKCatalog
+@implementation CFKPosition
 
 - (id)init {
     self = [super init];
     if (self) {
-        self.image = nil;
+        self.employees = nil;
+        self.jobs = nil;
         self.store = nil;
     }
     return self;
@@ -24,14 +26,16 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [self init];
     if (self) {
-        self.image = [aDecoder decodeObjectForKey:@"image"];
+        self.employees = [aDecoder decodeObjectForKey:@"employees"];
+        self.jobs = [aDecoder decodeObjectForKey:@"jobs"];
         self.store = [aDecoder decodeObjectForKey:@"store"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:self.image forKey:@"image"];
+    [aCoder encodeObject:self.employees forKey:@"employees"];
+    [aCoder encodeObject:self.jobs forKey:@"jobs"];
     [aCoder encodeObject:self.store forKey:@"store"];
 }
 

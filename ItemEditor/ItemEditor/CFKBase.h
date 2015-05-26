@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSNumber *flag;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *note;
+@property (nonatomic, copy) NSString *remoteID;
 @property (nonatomic, copy) NSString *summary;
 @property (nonatomic, copy) NSString *tag;
 @property (nonatomic, strong) NSDate *updatedAt;

@@ -8,18 +8,15 @@
 
 #import "CFKScannable.h"
 
-@class CFKPayment, CFKStore;
+@class CFKPayment, CFKStore, CFKCustomer;
 
 @interface CFKAccount : CFKScannable
 
-@property (nonatomic, copy) NSString *address;
 @property (nonatomic, strong) NSDecimalNumber *balance;
 @property (nonatomic, strong) NSDecimalNumber *credit;
-@property (nonatomic, copy) NSString *email;
-@property (nonatomic, copy) NSString *phone;
-@property (nonatomic, copy) NSString *surname;
 
 // RELATIONSHIPS
+@property (nonatomic, strong) CFKCustomer *customer;
 @property (nonatomic, strong) CFKPayment *payments;
 @property (nonatomic, strong) CFKStore *store;
 

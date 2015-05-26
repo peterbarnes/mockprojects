@@ -8,15 +8,19 @@
 
 #import "CFKAccount.h"
 
-@class CFKTill, CFKTimeCard, CFKTransaction;
+@class CFKJob, CFKPosition, CFKTill, CFKTimeCard, CFKTransaction;
 
 @interface CFKEmployee : CFKAccount
 
+@property (nonatomic, strong) NSDate *employedAt;
 @property (nonatomic, strong) NSNumber *period;
 @property (nonatomic, strong) NSNumber *role;
+@property (nonatomic, strong) NSDate *unemployedAt;
 @property (nonatomic, strong) NSDecimalNumber *wage;
 
 // RELATIONSHIPS
+@property (nonatomic, strong) CFKJob *jobs;
+@property (nonatomic, strong) CFKPosition *positions;
 @property (nonatomic, strong) CFKTill *tills;
 @property (nonatomic, strong) CFKTimeCard *timecards;
 @property (nonatomic, strong) CFKTransaction *transactions;
