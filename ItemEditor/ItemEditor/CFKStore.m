@@ -55,7 +55,7 @@
         self.incentiveMin = [aDecoder decodeObjectForKey:@"incentiveMin"];
         self.phone = [aDecoder decodeObjectForKey:@"phone"];
         self.stripeID = [aDecoder decodeObjectForKey:@"stripeID"];
-        self.accounts = [aDecoder decodeObjectForKey:@"accounts"];
+        self.contacts = [aDecoder decodeObjectForKey:@"contacts"];
         self.catalogs = [aDecoder decodeObjectForKey:@"catalogs"];
         self.containers = [aDecoder decodeObjectForKey:@"containers"];
         self.discounts = [aDecoder decodeObjectForKey:@"discounts"];
@@ -77,7 +77,7 @@
     [aCoder encodeObject:self.incentiveMin forKey:@"incentiveMin"];
     [aCoder encodeObject:self.phone forKey:@"phone"];
     [aCoder encodeObject:self.stripeID forKey:@"stripeID"];
-    [aCoder encodeObject:self.accounts forKey:@"accounts"];
+    [aCoder encodeObject:self.contacts forKey:@"contacts"];
     [aCoder encodeObject:self.catalogs forKey:@"catalogs"];
     [aCoder encodeObject:self.containers forKey:@"containers"];
     [aCoder encodeObject:self.discounts forKey:@"discounts"];
