@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F27AC6A1AF41AA100EFF6D2 /* CFKAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC691AF41AA100EFF6D2 /* CFKAccount.m */; };
+		9F27AC6A1AF41AA100EFF6D2 /* CFKAccountable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC691AF41AA100EFF6D2 /* CFKAccountable.m */; };
 		9F27AC6D1AF41AAC00EFF6D2 /* CFKCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC6C1AF41AAC00EFF6D2 /* CFKCatalog.m */; };
 		9F27AC701AF41ABD00EFF6D2 /* CFKDiscount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC6F1AF41ABD00EFF6D2 /* CFKDiscount.m */; };
 		9F27AC731AF41ACB00EFF6D2 /* CFKTax.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC721AF41ACB00EFF6D2 /* CFKTax.m */; };
@@ -15,7 +15,7 @@
 		9F27AC791AF41AF500EFF6D2 /* CFKConfigurable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC781AF41AF500EFF6D2 /* CFKConfigurable.m */; };
 		9F27AC7C1AF41B7A00EFF6D2 /* CFKBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC7B1AF41B7A00EFF6D2 /* CFKBase.m */; };
 		9F27AC7F1AF41BB000EFF6D2 /* CFKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC7E1AF41BB000EFF6D2 /* CFKImage.m */; };
-		9F27AC821AF41BC500EFF6D2 /* CFKLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC811AF41BC500EFF6D2 /* CFKLocation.m */; };
+		9F27AC821AF41BC500EFF6D2 /* CFKLocatable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC811AF41BC500EFF6D2 /* CFKLocatable.m */; };
 		9F27AC851AF41BDC00EFF6D2 /* CFKOptionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC841AF41BDC00EFF6D2 /* CFKOptionGroup.m */; };
 		9F27AC881AF41BF500EFF6D2 /* CFKPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC871AF41BF500EFF6D2 /* CFKPrinter.m */; };
 		9F27AC8E1AF41C5100EFF6D2 /* CFKPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27AC8D1AF41C5100EFF6D2 /* CFKPrice.m */; };
@@ -36,6 +36,8 @@
 		9F27ACC11AF4208100EFF6D2 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACC01AF4208100EFF6D2 /* WindowController.m */; };
 		9F27ACC41AF4209300EFF6D2 /* TabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACC31AF4209300EFF6D2 /* TabController.m */; };
 		9F27ACC71AF420AA00EFF6D2 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27ACC61AF420AA00EFF6D2 /* DataSource.m */; };
+		9F4E84271B334CF800AA542F /* CFKImageable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E84261B334CF800AA542F /* CFKImageable.m */; };
+		9F4E842A1B334F9B00AA542F /* CFKContactable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E84291B334F9B00AA542F /* CFKContactable.m */; };
 		9F580A361AF2EBD50024F717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A351AF2EBD50024F717 /* AppDelegate.m */; };
 		9F580A381AF2EBD50024F717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A371AF2EBD50024F717 /* main.m */; };
 		9F580A3B1AF2EBD50024F717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F580A3A1AF2EBD50024F717 /* ViewController.m */; };
@@ -80,8 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F27AC681AF41AA100EFF6D2 /* CFKAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKAccount.h; sourceTree = "<group>"; };
-		9F27AC691AF41AA100EFF6D2 /* CFKAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKAccount.m; sourceTree = "<group>"; };
+		9F27AC681AF41AA100EFF6D2 /* CFKAccountable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKAccountable.h; sourceTree = "<group>"; };
+		9F27AC691AF41AA100EFF6D2 /* CFKAccountable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKAccountable.m; sourceTree = "<group>"; };
 		9F27AC6B1AF41AAC00EFF6D2 /* CFKCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKCatalog.h; sourceTree = "<group>"; };
 		9F27AC6C1AF41AAC00EFF6D2 /* CFKCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKCatalog.m; sourceTree = "<group>"; };
 		9F27AC6E1AF41ABD00EFF6D2 /* CFKDiscount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKDiscount.h; sourceTree = "<group>"; };
@@ -96,8 +98,8 @@
 		9F27AC7B1AF41B7A00EFF6D2 /* CFKBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKBase.m; sourceTree = "<group>"; };
 		9F27AC7D1AF41BB000EFF6D2 /* CFKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKImage.h; sourceTree = "<group>"; };
 		9F27AC7E1AF41BB000EFF6D2 /* CFKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKImage.m; sourceTree = "<group>"; };
-		9F27AC801AF41BC500EFF6D2 /* CFKLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKLocation.h; sourceTree = "<group>"; };
-		9F27AC811AF41BC500EFF6D2 /* CFKLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKLocation.m; sourceTree = "<group>"; };
+		9F27AC801AF41BC500EFF6D2 /* CFKLocatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKLocatable.h; sourceTree = "<group>"; };
+		9F27AC811AF41BC500EFF6D2 /* CFKLocatable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKLocatable.m; sourceTree = "<group>"; };
 		9F27AC831AF41BDC00EFF6D2 /* CFKOptionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKOptionGroup.h; sourceTree = "<group>"; };
 		9F27AC841AF41BDC00EFF6D2 /* CFKOptionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKOptionGroup.m; sourceTree = "<group>"; };
 		9F27AC861AF41BF500EFF6D2 /* CFKPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKPrinter.h; sourceTree = "<group>"; };
@@ -140,6 +142,10 @@
 		9F27ACC31AF4209300EFF6D2 /* TabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabController.m; sourceTree = "<group>"; };
 		9F27ACC51AF420AA00EFF6D2 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		9F27ACC61AF420AA00EFF6D2 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		9F4E84251B334CF800AA542F /* CFKImageable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKImageable.h; sourceTree = "<group>"; };
+		9F4E84261B334CF800AA542F /* CFKImageable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKImageable.m; sourceTree = "<group>"; };
+		9F4E84281B334F9B00AA542F /* CFKContactable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKContactable.h; sourceTree = "<group>"; };
+		9F4E84291B334F9B00AA542F /* CFKContactable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKContactable.m; sourceTree = "<group>"; };
 		9F580A2F1AF2EBD50024F717 /* ItemEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItemEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F580A331AF2EBD50024F717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F580A341AF2EBD50024F717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -273,8 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				9F27ACC81AF4260E00EFF6D2 /* Base Classes */,
-				9F27AC681AF41AA100EFF6D2 /* CFKAccount.h */,
-				9F27AC691AF41AA100EFF6D2 /* CFKAccount.m */,
+				9F27AC681AF41AA100EFF6D2 /* CFKAccountable.h */,
+				9F27AC691AF41AA100EFF6D2 /* CFKAccountable.m */,
 				9F27AC6B1AF41AAC00EFF6D2 /* CFKCatalog.h */,
 				9F27AC6C1AF41AAC00EFF6D2 /* CFKCatalog.m */,
 				9F6737CD1B0E7D610036161D /* CFKContainer.h */,
@@ -293,8 +299,8 @@
 				9FD9B1C41B15006E002A8660 /* CFKJob.m */,
 				9FA73C891B0E646100D36243 /* CFKLine.h */,
 				9FA73C8A1B0E646100D36243 /* CFKLine.m */,
-				9F27AC801AF41BC500EFF6D2 /* CFKLocation.h */,
-				9F27AC811AF41BC500EFF6D2 /* CFKLocation.m */,
+				9F27AC801AF41BC500EFF6D2 /* CFKLocatable.h */,
+				9F27AC811AF41BC500EFF6D2 /* CFKLocatable.m */,
 				9FA73C8C1B0E64A300D36243 /* CFKLog.h */,
 				9FA73C8D1B0E64A300D36243 /* CFKLog.m */,
 				9F27AC741AF41ADA00EFF6D2 /* CFKOption.h */,
@@ -336,6 +342,10 @@
 				9F27AC7B1AF41B7A00EFF6D2 /* CFKBase.m */,
 				9F27AC771AF41AF500EFF6D2 /* CFKConfigurable.h */,
 				9F27AC781AF41AF500EFF6D2 /* CFKConfigurable.m */,
+				9F4E84281B334F9B00AA542F /* CFKContactable.h */,
+				9F4E84291B334F9B00AA542F /* CFKContactable.m */,
+				9F4E84251B334CF800AA542F /* CFKImageable.h */,
+				9F4E84261B334CF800AA542F /* CFKImageable.m */,
 				9F27AC891AF41C2400EFF6D2 /* CFKScannable.h */,
 				9F27AC8A1AF41C2400EFF6D2 /* CFKScannable.m */,
 			);
@@ -514,7 +524,7 @@
 				9F6737D81B0E7EC40036161D /* CFKTill.m in Sources */,
 				9FA73C8E1B0E64A300D36243 /* CFKLog.m in Sources */,
 				9F27AC7C1AF41B7A00EFF6D2 /* CFKBase.m in Sources */,
-				9F27AC821AF41BC500EFF6D2 /* CFKLocation.m in Sources */,
+				9F27AC821AF41BC500EFF6D2 /* CFKLocatable.m in Sources */,
 				9F6737CC1B0E77140036161D /* CFKEmployee.m in Sources */,
 				9F580A3B1AF2EBD50024F717 /* ViewController.m in Sources */,
 				9F27AC941AF41C6900EFF6D2 /* CFKStore.m in Sources */,
@@ -528,6 +538,7 @@
 				9FA73C941B0E66CC00D36243 /* CFKTransaction.m in Sources */,
 				9F27AC881AF41BF500EFF6D2 /* CFKPrinter.m in Sources */,
 				9FD9B1D51B15142C002A8660 /* PositionViewController.m in Sources */,
+				9F4E842A1B334F9B00AA542F /* CFKContactable.m in Sources */,
 				9F27ACC11AF4208100EFF6D2 /* WindowController.m in Sources */,
 				9FB42DEE1B14FB3700EB901E /* EmployeeViewController.m in Sources */,
 				9FD9B1C51B15006E002A8660 /* CFKJob.m in Sources */,
@@ -539,7 +550,7 @@
 				9FD9B1DF1B151496002A8660 /* TillViewController.m in Sources */,
 				9F27ACAD1AF41FD500EFF6D2 /* StoreViewController.m in Sources */,
 				9F6737D51B0E7EAC0036161D /* CFKTimeCard.m in Sources */,
-				9F27AC6A1AF41AA100EFF6D2 /* CFKAccount.m in Sources */,
+				9F27AC6A1AF41AA100EFF6D2 /* CFKAccountable.m in Sources */,
 				9FD9B1DC1B15147B002A8660 /* TemplateViewController.m in Sources */,
 				9FD9B1D11B151413002A8660 /* JobViewController.m in Sources */,
 				9F580A381AF2EBD50024F717 /* main.m in Sources */,
@@ -559,6 +570,7 @@
 				9F27AC9F1AF41F7900EFF6D2 /* OptionGroupViewController.m in Sources */,
 				9F27AC6D1AF41AAC00EFF6D2 /* CFKCatalog.m in Sources */,
 				9F27AC851AF41BDC00EFF6D2 /* CFKOptionGroup.m in Sources */,
+				9F4E84271B334CF800AA542F /* CFKImageable.m in Sources */,
 				9F27AC8E1AF41C5100EFF6D2 /* CFKPrice.m in Sources */,
 				9FA73C8B1B0E646100D36243 /* CFKLine.m in Sources */,
 				9F27ACBE1AF4205600EFF6D2 /* DiscountViewController.m in Sources */,

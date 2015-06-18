@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKBase.h"
+#import "CFKImageable.h"
 
-@class CFKAccount, CFKCatalog, CFKContainer, CFKDiscount, CFKImage, CFKLog, CFKPosition, CFKPrinter, CFKTax, CFKTemplate, CFKTill, CFKTransaction;
+@class CFKCatalog, CFKContactable, CFKContainer, CFKDiscount, CFKLog, CFKPosition, CFKPrinter, CFKTax, CFKTemplate, CFKTill, CFKTransaction;
 
-@interface CFKStore : CFKBase
+@interface CFKStore : CFKImageable
 
 @property (nonatomic, copy) NSString *address;
 @property (nonatomic, copy) NSString *email;
@@ -21,11 +21,10 @@
 @property (nonatomic, copy) NSString *stripeID;
 
 // RELATIONSHIPS
-@property (nonatomic, strong) CFKAccount *accounts;
 @property (nonatomic, strong) CFKCatalog *catalogs;
+@property (nonatomic, strong) CFKContactable *contacts;
 @property (nonatomic, strong) CFKContainer *containers;
 @property (nonatomic, strong) CFKDiscount *discounts;
-@property (nonatomic, strong) CFKImage *image;
 @property (nonatomic, strong) CFKLog *logs;
 @property (nonatomic, strong) CFKPosition *positions;
 @property (nonatomic, strong) CFKPrinter *printers;

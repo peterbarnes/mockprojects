@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKLocation.h"
+#import "CFKLocatable.h"
 
 @class CFKEmployee, CFKPosition, CFKTask;
 
-@interface CFKJob : CFKLocation
+@interface CFKJob : CFKLocatable
 
 @property (nonatomic, strong) NSDate *availableAt;
 @property (nonatomic, strong) NSDate *expireAt;

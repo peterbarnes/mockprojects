@@ -6,18 +6,16 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKScannable.h"
+#import "CFKContactable.h"
 
-@class CFKPayment, CFKStore, CFKCustomer;
+@class CFKPayment;
 
-@interface CFKAccount : CFKScannable
+@interface CFKAccountable : CFKContactable
 
 @property (nonatomic, strong) NSDecimalNumber *balance;
 @property (nonatomic, strong) NSDecimalNumber *credit;
 
 // RELATIONSHIPS
-@property (nonatomic, strong) CFKCustomer *customer;
 @property (nonatomic, strong) CFKPayment *payments;
-@property (nonatomic, strong) CFKStore *store;
 
 @end

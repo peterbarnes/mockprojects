@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKBase.h"
+#import "CFKImageable.h"
 
-@class CFKAccount, CFKImage, CFKTransaction;
+@class CFKAccount, CFKTransaction;
 
-@interface CFKPayment : CFKBase
+@interface CFKPayment : CFKImageable
 
 @property (nonatomic, strong) NSDecimalNumber *amount;
 @property (nonatomic, strong) NSDecimalNumber *incentive;
@@ -20,7 +20,6 @@
 
 // RELATIONSHIPS
 @property (nonatomic, strong) CFKAccount *account;
-@property (nonatomic, strong) CFKImage *image;
 @property (nonatomic, strong) CFKTransaction *transaction;
 
 @end

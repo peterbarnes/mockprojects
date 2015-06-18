@@ -7,9 +7,6 @@
 //
 
 #import "CFKImage.h"
-#import "CFKPayment.h"
-#import "CFKScannable.h"
-#import "CFKStore.h"
 
 @implementation CFKImage
 
@@ -17,9 +14,6 @@
     self = [super init];
     if (self) {
         self.data = nil;
-        self.payment = nil;
-        self.scannable = nil;
-        self.store = nil;
     }
     return self;
 }

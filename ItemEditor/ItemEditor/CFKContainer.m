@@ -17,6 +17,8 @@
     if (self) {
         self.maximum = 0;
         self.target = 0;
+        self.children = nil;
+        self.parent = nil;
         self.store = nil;
         self.units = nil;
     }
@@ -28,6 +30,8 @@
     if (self) {
         self.maximum = [aDecoder decodeObjectForKey:@"maximum"];
         self.target = [aDecoder decodeObjectForKey:@"target"];
+        self.children = [aDecoder decodeObjectForKey:@"children"];
+        self.parent = [aDecoder decodeObjectForKey:@"parent"];
         self.store = [aDecoder decodeObjectForKey:@"store"];
         self.units = [aDecoder decodeObjectForKey:@"units"];
     }
@@ -37,6 +41,8 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.maximum forKey:@"maximum"];
     [aCoder encodeObject:self.target forKey:@"target"];
+    [aCoder encodeObject:self.children forKey:@"children"];
+    [aCoder encodeObject:self.parent forKey:@"parent"];
     [aCoder encodeObject:self.store forKey:@"store"];
     [aCoder encodeObject:self.units forKey:@"units"];
 }

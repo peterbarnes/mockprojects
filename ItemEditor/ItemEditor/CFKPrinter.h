@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKLocation.h"
+#import "CFKLocatable.h"
 
 @class CFKStore, CFKTemplate;
 
-@interface CFKPrinter : CFKLocation
+@interface CFKPrinter : CFKLocatable
 
 @property (nonatomic, copy) NSString *path;
 

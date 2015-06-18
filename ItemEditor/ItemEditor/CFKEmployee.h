@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKAccount.h"
+#import "CFKCustomer.h"
 
 @class CFKJob, CFKPosition, CFKTill, CFKTimeCard, CFKTransaction;
 
-@interface CFKEmployee : CFKAccount
+@interface CFKEmployee : CFKCustomer
 
 @property (nonatomic, strong) NSDate *employedAt;
 @property (nonatomic, strong) NSNumber *period;

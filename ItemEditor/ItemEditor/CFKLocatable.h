@@ -8,13 +8,9 @@
 
 #import "CFKScannable.h"
 
-@interface CFKLocation : CFKScannable
+@interface CFKLocatable : CFKScannable
 
 @property (nonatomic, strong) NSDecimalNumber *latitude;
 @property (nonatomic, strong) NSDecimalNumber *longitude;
-
-// RELATIONSHIPS
-@property (nonatomic, strong) CFKLocation *parent;
-@property (nonatomic, strong) CFKLocation *children;
 
 @end

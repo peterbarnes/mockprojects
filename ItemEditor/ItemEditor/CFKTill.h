@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKLocation.h"
+#import "CFKLocatable.h"
 
 @class CFKEmployee, CFKStore, CFKTransaction;
 
-@interface CFKTill : CFKLocation
+@interface CFKTill : CFKLocatable
 
 @property (nonatomic, strong) NSDecimalNumber *balance;
 @property (nonatomic, strong) NSDecimalNumber *maximum;

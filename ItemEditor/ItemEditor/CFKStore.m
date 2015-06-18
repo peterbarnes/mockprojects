@@ -7,11 +7,10 @@
 //
 
 #import "CFKStore.h"
-#import "CFKAccount.h"
+#import "CFKContactable.h"
 #import "CFKCatalog.h"
 #import "CFKContainer.h"
 #import "CFKDiscount.h"
-#import "CFKImage.h"
 #import "CFKLog.h"
 #import "CFKPosition.h"
 #import "CFKPrinter.h"
@@ -32,11 +31,10 @@
         self.incentiveMin = [NSDecimalNumber decimalNumberWithMantissa:0 exponent:0 isNegative:NO];
         self.phone = @"";
         self.stripeID = @"";
-        self.accounts = nil;
+        self.contacts = nil;
         self.catalogs = nil;
         self.containers = nil;
         self.discounts = nil;
-        self.image = nil;
         self.logs = nil;
         self.printers = nil;
         self.taxes = nil;

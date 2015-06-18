@@ -6,16 +6,18 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKLocation.h"
+#import "CFKLocatable.h"
 
 @class CFKStore, CFKUnit;
 
-@interface CFKContainer : CFKLocation
+@interface CFKContainer : CFKLocatable
 
 @property (nonatomic, strong) NSNumber *maximum;
 @property (nonatomic, strong) NSNumber *target;
 
 // RELATIONSHIPS
+@property (nonatomic, strong) CFKContainer *children;
+@property (nonatomic, strong) CFKContainer *parent;
 @property (nonatomic, strong) CFKStore *store;
 @property (nonatomic, strong) CFKUnit *units;
 

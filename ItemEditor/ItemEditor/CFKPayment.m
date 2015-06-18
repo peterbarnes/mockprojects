@@ -8,7 +8,6 @@
 
 #import "CFKPayment.h"
 #import "CFKAccount.h"
-#import "CFKImage.h"
 #import "CFKTransaction.h"
 
 @implementation CFKPayment

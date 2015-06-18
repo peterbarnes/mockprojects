@@ -1,19 +1,20 @@
 //
-//  CFKScannable.m
+//  CFKImageable.m
 //  ItemEditor
 //
-//  Created by Peter Barnes on 5/1/15.
+//  Created by Peter Barnes on 6/18/15.
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKScannable.h"
+#import "CFKImageable.h"
+#import "CFKImage.h"
 
-@implementation CFKScannable
+@implementation CFKImageable
 
 - (id)init {
     self = [super init];
     if (self) {
-        self.sku = @"";
+        self.image = nil;
     }
     return self;
 }
@@ -21,13 +22,13 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [self init];
     if (self) {
-        self.sku = [aDecoder decodeObjectForKey:@"sku"];
+        self.image = [aDecoder decodeObjectForKey:@"image"];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:self.sku forKey:@"sku"];
+    [aCoder encodeObject:self.image forKey:@"image"];
 }
 
 @end

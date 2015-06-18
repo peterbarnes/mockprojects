@@ -6,15 +6,10 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKBase.h"
+#import "CFKImageable.h"
 
-@class CFKImage;
-
-@interface CFKScannable : CFKBase
+@interface CFKScannable : CFKImageable
 
 @property (nonatomic, copy) NSString *sku;
-
-// RELATIONSHIPS
-@property (nonatomic, strong) CFKImage *image;
 
 @end

@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "CFKScannable.h"
 
-@class CFKImage, CFKStore;
+@class CFKStore, CFKItem;
 
 @interface CFKCatalog : CFKScannable
 
 // RELATIONSHIPS
-@property (nonatomic, strong) CFKImage *image;
+@property (nonatomic, strong) CFKCatalog *children;
+@property (nonatomic, strong) CFKItem *items;
+@property (nonatomic, strong) CFKCatalog *parent;
 @property (nonatomic, strong) CFKStore *store;
 
 @end

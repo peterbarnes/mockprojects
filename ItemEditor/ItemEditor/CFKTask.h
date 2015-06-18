@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
-#import "CFKLocation.h"
+#import "CFKLocatable.h"
 
 @class CFKJob;
 
-@interface CFKTask : CFKLocation
+@interface CFKTask : CFKLocatable
 
 @property (nonatomic, strong) NSNumber *duration;
 @property (nonatomic, strong) NSNumber *order;
